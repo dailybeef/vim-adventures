@@ -412,4 +412,66 @@ solutions to puzzles in Vim Adventures
    - Congratulations!  `<CTRL-R>` repeatedly to redo all the changes, and then the final cutscene will happen
 - THE END!
    
+### Level: Macros: Do Repeat Yourself
+#### M Mark
+- use e multiple times to straighten out the tiles
+- collect `@` command
 
+#### B Mark
+**Duke Nukem Puzzle**
+- `@g` to run the macro
+
+#### W Mark
+- use `a` to append the missing 'e' to 'cake' and '-' to 'dw'
+- collect `-` command
+
+#### B Mark
+**"The problem with quotes" Puzzle**
+- Go to W mark
+- stand on the 4th line and yank 'dw-' into the a register using `"ayE`
+- go back to the "problem with quotes" puzzle
+- enter the puzzle and run the macro using `4@a`
+
+#### J Mark
+- use `"ayE` to yank the characters 'jeff,'
+- step in the puzzle again and use `@9a` to run the macro
+- collect `+` command
+- talk to all the surrounding people (hiding in the bushes)
+- stand on the topmost tile of the arrow and use zb to see the solution to the Axe puzzle
+
+#### B Mark
+**Email This Route Puzzle**
+- Go to W mark
+- stand on the second '2' of the r2d2+r.. line
+- use `"myta` to yank '2+rofl@m' into the m register
+- go back to the puzzle
+- enter the puzzle on the first character
+- use `@m` to run the m macro
+- talk twice to the captain on the last line to let him take you to the Axe puzzle
+
+#### Axe puzzle
+- Use `6w4h` to complete the puzzle and collect the key
+
+#### Zelda puzzle
+- Go to the W mark and yank 'ceake' into the z register using "zyE
+- Go to M mark
+- Enter the house, stand on the 'o' of the world top and run `@z<ESC>`
+- Don't forget to open the chest with your key!
+
+#### List puzzle
+- Go down from the Jeff puzzle and enter the List puzzle.
+- Run `qqI<SPACE><SPACE><li><ESC>A</li><ESC>j0q` to record the macro. Run it: `10@q` to solve the puzzle
+
+#### Rickroll puzzle
+- Use "ayE to yank '0rNft2rn' into the a register.
+- Search for the 'k' character using ? or /.
+- Append it to the a register using `"Ayl`
+- Use `G@9a` to solve the puzzle and collect the star.
+
+#### Empty your cup puzzle
+- Use `qaqqbqqzq` to clear the regsiters and solve the puzzle.
+- Step on the star to be transported to the last puzzle
+
+#### Great day puzzle
+- Use `qqxpl@qq` to record the recursive macro.
+- Run it using @q to finish the level.
